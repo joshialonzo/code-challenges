@@ -18,3 +18,7 @@ Solving code challenges with a dedicated branch per programming language.
 
 * Data Structures: Stacks: `data_structure_stack.py`
 * Balanced symbols: `balanced_symbols.py`
+
+## Data Structures: Queues
+
+* Data Structures: Queues: `data_structure_queue.py`
