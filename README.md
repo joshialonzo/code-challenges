@@ -5,3 +5,4 @@ Code challenges solved with a dedicated branch per programming language.
 
 * Find prime factors
 * Identify a palindrome
+* Sort words in string
