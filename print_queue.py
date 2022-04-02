@@ -1,4 +1,7 @@
-class Queue:
+from random import randrange
+
+
+class PrintQueue:
     def __init__(self):
         self.items = []
 
@@ -51,32 +54,57 @@ class Queue:
         return self.items == []
 
 
+
+class Job:
+    def __init__(self, pages=None) -> None:
+        self.pages = pages if pages else randrange(0, 11)
+    
+    def print_page(self):
+        self.pages -= 1
+    
+    def check_complete(self):
+        if self.pages == 0:
+            return True
+        return False
+
+
+class Printer:
+
+    def __init__(self) -> None:
+        self.current_job = None
+
+    def get_job(self, print_queue: PrintQueue):
+        try:
+            self.current_job = print_queue.dequeue()
+        except IndexError:
+            return "No more jobs to print."
+
+    def print_job(self, job):
+        while job.pages > 0:
+            job.print_page()
+        
+        if job.check_complete():
+            return "Printing complete."
+        else:
+            return "An error occured."
+
+
 def main():
-    # create a queue
-    queue = Queue()
-    # add some items to the queue
-    queue.enqueue("apple")
-    queue.enqueue("banana")
-    assert queue.items == ["banana", "apple"]
-    # size of the queue
-    assert queue.size() == 2
-    # is the queue empty?
-    assert queue.is_empty() == False
-    # peek the next item in the queue
-    assert queue.peek() == "apple"
-    # remove an item from the queue
-    queue.dequeue()
-    assert queue.items == ["banana"]
-    # remove all items from the queue
-    queue.dequeue()
-    queue.dequeue()
-    assert queue.items == []
-    # peek the next item in the queue
-    assert queue.peek() == None
-    # is the queue empty?
-    assert queue.is_empty() == True
-    # size of the queue
-    assert queue.size() == 0
+    # Create a job
+    job_1 = Job()
+    # Create a print queue
+    print_q = PrintQueue()
+    # Create a printer
+    printer = Printer()
+
+    # Append a job to the queue
+    print_q.enqueue(job_1)
+    assert print_q.size() == 1
+    # Take a job to print
+    printer.get_job(print_q)
+    assert print_q.items == []
+    # Print the status of the current job
+    assert printer.print_job(printer.current_job) == "Printing complete."
 
 
 if __name__ == "__main__":

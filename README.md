@@ -22,3 +22,4 @@ Solving code challenges with a dedicated branch per programming language.
 ## Data Structures: Queues
 
 * Data Structures: Queues: `data_structure_queue.py`
+* Print Queue: `print_queue.py`
