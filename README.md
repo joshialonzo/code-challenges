@@ -27,3 +27,4 @@ Solving code challenges with a dedicated branch per programming language.
 ## Data Structures: Deques
 
 * Data Structures: Deques: `data_structure_deque.py`
+* Is the string a palindrome?: `check_palindrome.py`
