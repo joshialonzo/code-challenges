@@ -28,3 +28,7 @@ Solving code challenges with a dedicated branch per programming language.
 
 * Data Structures: Deques: `data_structure_deque.py`
 * Is the string a palindrome?: `check_palindrome.py`
+
+## Data Structures: Linked Lists
+
+* Data Structures: Singly Linked Lists: `data_structure_singly_linked_list.py`
