@@ -98,3 +98,17 @@ Threads
 * Use the Python multiprocessing package
 * Communication between processes is more complicated than between threads
 * Multiple processes use more system resources than creating multiple threads
+
+### Thread Lifecycle
+
+1. States: New, Runnable, Blocked, Terminated
+2. Actions: Start, Waiting, Finish, Resume
+
+* New
+    * Start -> Runnable
+* Runnable
+    * Waiting -> Blocked
+    * Finish -> Terminated
+* Blocked
+    * Resume -> Runnable
+* Terminated
