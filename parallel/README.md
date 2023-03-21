@@ -58,3 +58,8 @@ Threads
 * Sockets and pipes
 * Shared memory
 * Remote procedure calls
+
+### Concurrent execution
+
+* One or more processes are overlapping in time.
+* Only one processing will be executed at any moment.
