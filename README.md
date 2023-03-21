@@ -36,3 +36,7 @@ Solving code challenges with a dedicated branch per programming language.
 ## Parallel and Concurrent Programming
 
 [Parallel and Concurrent Programming](parallel/README.md)
+
+* [Multiple concurrent threads](parallel/multiple_concurrent_threads.py)
+* [Multiple parallel processes](parallel/multiple_processes.py)
+* [Execution Scheduling](parallel/execution_scheduling.py)
