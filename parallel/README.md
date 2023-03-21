@@ -24,5 +24,15 @@ It increases the throughput of a program enabling us to:
 
 ### Parallel Programming Model
 
-* Single Program, Multiple Data (SPMD). This is the most common.
-* Multiple Program, Multiple Data (MPMD). We require a manager.
+* Single Program, Multiple Data (SPMD). This is the most common. We will focus on this one.
+* Multiple Program, Multiple Data (MPMD). We require a manager. We will focus on this one later.
+
+### Shared vs distributed memory
+
+Memory speed << Processor speed
+
+* Shared memory: All processors access the same memory with global address space.
+    * Uniform memory access (UMA): All the processor has equal access to all the memory.
+        * Symmetric Multiprocessing System (SMP): We will focus on this one.
+    * Non-uniform memory access (NUMA): Some processors have quicker access to some parts of memory than others.
+* Distributed memory: Every single processor has its own local memory with its own address space so the concept of global address space does not exist. All of the processors are connected to the same network. Each processor operates independently. It is highly scalable but it requires more networking knowledge.
