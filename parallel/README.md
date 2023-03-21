@@ -90,3 +90,11 @@ Threads
 
 * GIL is not a bottleneck
 * Use the Python threading module to implement multiple concurrent threads
+
+### CPU-Bound Applications
+
+* GIL can negatively impact performance
+* Implement parallel algorithms as external library functions
+* Use the Python multiprocessing package
+* Communication between processes is more complicated than between threads
+* Multiple processes use more system resources than creating multiple threads
