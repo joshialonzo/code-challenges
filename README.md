@@ -32,3 +32,7 @@ Solving code challenges with a dedicated branch per programming language.
 ## Data Structures: Linked Lists
 
 * Data Structures: Singly Linked Lists: `data_structure_singly_linked_list.py`
+
+## Parallel and Concurrent Programming
+
+[Parallel and Concurrent Programming](parallel/README.md)
