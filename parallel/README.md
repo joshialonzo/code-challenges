@@ -27,7 +27,7 @@ It increases the throughput of a program enabling us to:
 * Single Program, Multiple Data (SPMD). This is the most common. We will focus on this one.
 * Multiple Program, Multiple Data (MPMD). We require a manager. We will focus on this one later.
 
-### Shared vs distributed memory
+### Shared vs Distributed Memory
 
 Memory speed << Processor speed
 
@@ -59,7 +59,7 @@ Threads
 * Shared memory
 * Remote procedure calls
 
-### Concurrent execution
+### Concurrent Execution
 
 * One or more processes are overlapping in time.
 * Only one processing will be executed at any moment.
@@ -72,7 +72,7 @@ Threads
 * Graphics processing unit.
 * Computer cluster.
 
-### Parallel execution
+### Parallel Execution
 
 * One or more processes are executed at the same time using parallel hardware.
 * Simultaneous execution.
@@ -85,3 +85,8 @@ Threads
 * Written in C and Python.
 * Uses GIL for thread-safe operation.
 * GIL lives inside CPython, the most commonly used Python interpreter.
+
+### I/O-Bound Applications
+
+* GIL is not a bottleneck
+* Use the Python threading module to implement multiple concurrent threads
