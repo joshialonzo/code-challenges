@@ -63,9 +63,18 @@ Threads
 
 * One or more processes are overlapping in time.
 * Only one processing will be executed at any moment.
+* Dealing with multiple things at once.
+* Suitable for handling I/O dependant tasks.
 
 ### Parallel Hardware
 
-* Multi-core processors
-* Graphics processing unit
-* Computer cluster
+* Multi-core processors.
+* Graphics processing unit.
+* Computer cluster.
+
+### Parallel execution
+
+* One or more processes are executed at the same time using parallel hardware.
+* Simultaneous execution.
+* Doing multiple things at once.
+* Suitable for computationally intensive tasks.
