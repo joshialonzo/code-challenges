@@ -36,3 +36,25 @@ Memory speed << Processor speed
         * Symmetric Multiprocessing System (SMP): We will focus on this one.
     * Non-uniform memory access (NUMA): Some processors have quicker access to some parts of memory than others.
 * Distributed memory: Every single processor has its own local memory with its own address space so the concept of global address space does not exist. All of the processors are connected to the same network. Each processor operates independently. It is highly scalable but it requires more networking knowledge.
+
+### Threads vs Process
+
+Process
+
+* Includes code, data, and state information
+* Independent instance of a running program
+* Separate address space
+
+Threads
+
+* Subset of a process
+* Independent path of execution
+* The operating system schedules threads for execution
+* They are "lightweight" - it requires less overhead to create and terminate
+* The operating system can switch between threads faster than processes
+
+### Inter-Process Communication (IPC)
+
+* Sockets and pipes
+* Shared memory
+* Remote procedure calls
