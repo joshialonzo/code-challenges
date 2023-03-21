@@ -63,3 +63,9 @@ Threads
 
 * One or more processes are overlapping in time.
 * Only one processing will be executed at any moment.
+
+### Parallel Hardware
+
+* Multi-core processors
+* Graphics processing unit
+* Computer cluster
