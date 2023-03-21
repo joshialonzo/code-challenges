@@ -78,3 +78,10 @@ Threads
 * Simultaneous execution.
 * Doing multiple things at once.
 * Suitable for computationally intensive tasks.
+
+### CPython
+
+* Default and most widely used Python interpreter.
+* Written in C and Python.
+* Uses GIL for thread-safe operation.
+* GIL lives inside CPython, the most commonly used Python interpreter.
