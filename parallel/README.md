@@ -10,3 +10,19 @@ It increases the throughput of a program enabling us to:
 
 * accomplish a single task faster
 * accomplish more tasks in a given time
+
+### Parallel Computing Architectures
+
+* The most widely used system to classify multiple parallel computing architectures is Flynn's taxonomy.
+* Flynn's taxonomy uses the number of instruction streams and data streams to do this classification.
+    1. SISD: Single Instruction Single Data. The first generation of architecture.
+    2. SIMD: Single Instruction Multiple Data. The second generation of architecture.
+    3. MISD: Multiple Instruction Single Data. Not feasible.
+    4. MIMD: Multiple Instruction Multiple Data. The most suitable for parallel computing.
+        * SPMD
+        * MPMD
+
+### Parallel Programming Model
+
+* Single Program, Multiple Data (SPMD). This is the most common.
+* Multiple Program, Multiple Data (MPMD). We require a manager.
