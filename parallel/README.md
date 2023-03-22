@@ -112,3 +112,8 @@ Threads
 * Blocked
     * Resume -> Runnable
 * Terminated
+
+### Daemon Threads
+
+* New threads will inherit daemon status from their parent.
+* Set the daemon property to change status before starting a thread.
