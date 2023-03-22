@@ -42,3 +42,4 @@ Solving code challenges with a dedicated branch per programming language.
 * [Execution Scheduling](parallel/execution_scheduling.py)
 * [Thread Lifecycle](parallel/thread_lifecycle.py)
 * [Daemon Thread](parallel/daemon_thread.py)
+* [Data Race](parallel/data_race.py)
