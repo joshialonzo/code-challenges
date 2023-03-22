@@ -43,3 +43,4 @@ Solving code challenges with a dedicated branch per programming language.
 * [Thread Lifecycle](parallel/thread_lifecycle.py)
 * [Daemon Thread](parallel/daemon_thread.py)
 * [Data Race](parallel/data_race.py)
+* [Mutual Exclusion](parallel/mutual_exclusion.py)
