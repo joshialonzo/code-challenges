@@ -1,4 +1,24 @@
+"""
+Stack
+* An ADT that stores items in the order in which they were added.
+* Items are added to and removed from the "top" of a stack.
+* LIFO: Last-in First-out
+* A Python list is used to do this implementation because:
+    * is mutable
+    * and stores an ordered collection of items.
+
+Opertions:
+* Add to the stack
+* Remove from the stack
+-----------------------
+* Is the stack empty?
+* How many items are in the stack?
+* What is next to be removed?
+"""
+
+
 class Stack:
+    """Data Structure: Stack"""
     def __init__(self) -> None:
         self.items = []
     
@@ -47,10 +67,11 @@ class Stack:
         
         Testing for equality happens in constant time.
         """
-        return self.items == []
+        return not self.items
 
 
 def main():
+    """Script: main"""
     # create a new stack
     my_stack = Stack()
     # append some elements to the stack
@@ -61,7 +82,7 @@ def main():
     # how many items we have in the stack
     assert my_stack.size() == 3
     # is the stack empty?
-    assert my_stack.is_empty() == False
+    assert not my_stack.is_empty()
     # remove the last item of the stack
     my_stack.pop()
     assert my_stack.items == ["apple", "banana"]
@@ -71,11 +92,11 @@ def main():
     my_stack.pop()
     my_stack.pop()
     my_stack.pop()
-    assert my_stack.items == []
+    assert not my_stack.items
     # how many items we have in the stack
     assert my_stack.size() == 0
     # is the stack empty?
-    assert my_stack.is_empty() == True
+    assert my_stack.is_empty()
 
 
 if __name__ == "__main__":
