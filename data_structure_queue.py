@@ -1,4 +1,10 @@
+"""
+Data Structure: Queue
+´main´ script
+"""
+
 class Queue:
+    """Data Structure: Queue"""
     def __init__(self):
         self.items = []
 
@@ -48,10 +54,11 @@ class Queue:
         
         Testing for equality happens in constant time.
         """
-        return self.items == []
+        return not self.items
 
 
 def main():
+    """Main script"""
     # create a queue
     queue = Queue()
     # add some items to the queue
@@ -61,7 +68,7 @@ def main():
     # size of the queue
     assert queue.size() == 2
     # is the queue empty?
-    assert queue.is_empty() == False
+    assert queue.is_empty() is False
     # peek the next item in the queue
     assert queue.peek() == "apple"
     # remove an item from the queue
@@ -70,11 +77,11 @@ def main():
     # remove all items from the queue
     queue.dequeue()
     queue.dequeue()
-    assert queue.items == []
+    assert not queue.items
     # peek the next item in the queue
-    assert queue.peek() == None
+    assert queue.peek() is None
     # is the queue empty?
-    assert queue.is_empty() == True
+    assert queue.is_empty() is True
     # size of the queue
     assert queue.size() == 0
 
