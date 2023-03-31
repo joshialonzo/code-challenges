@@ -45,6 +45,10 @@ Solving code challenges with a dedicated branch per programming language.
 * [Data Race](parallel/data_race.py)
 * [Mutual Exclusion](parallel/mutual_exclusion.py)
 
+## Regex
+
+* 
+
 ## Project Structure
 
 * [Python Project Structure](https://docs.python-guide.org/writing/structure/)

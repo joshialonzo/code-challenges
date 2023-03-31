@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "code-challenges"
+version = "0.0.1"
+description = "Python Code Challenges"
+authors = ["Josué Alonzo <joshi.alonzo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "code_challenges"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "8.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+black = "^23.3.0"
+flake8 = "^6.0.0"
+pre-commit = "^3.2.1"
+tox = "^4.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
