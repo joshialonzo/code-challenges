@@ -3,8 +3,14 @@ Solving code challenges with a dedicated branch per programming language.
 
 ## Python Challenges Index
 
+### Math
+
 * Find prime factors: `find_prime_factors.py`
+
+## Strings
+
 * Identify a palindrome:` identify_a_palindrome.py`
+* Firs reverse: [first_reverse.py](code_challenges/strings/first_reverse.py)
 
 ## Sorting
 
