@@ -3,10 +3,19 @@ def ab_check(string):
   a_index = None
   b_index = None
   string = string.lower()
-  
+
   for index, letter in enumerate(string):
     if letter == "a":
       a_index = index
+      if (
+        a_index is not None
+          and
+        b_index is not None
+      ):
+        diff = abs(b_index - a_index) - 1
+        if diff == 3:
+          return True
+
     elif letter == "b":
       b_index = index
       if (
@@ -14,9 +23,7 @@ def ab_check(string):
           and
         b_index is not None
       ):
-        diff = b_index
-        diff -= a_index
-        diff -= 1
+        diff = b_index - a_index - 1
         if diff == 3:
           return True
 
