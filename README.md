@@ -55,6 +55,20 @@ Solving code challenges with a dedicated branch per programming language.
 
 * 
 
+## TODO
+
+### Time
+
+* From 12 hours format to 24 hours format
+* From 24 hours format to 12 hours format
+* Do the same but taking into account that sometimes we have an space between the time and the am/pm string
+
+### Numeral systems
+
+* From decimal to binary
+* From binary to decimal
+* Pad a decimal number to a dynamic integer
+
 ## Project Structure
 
 * [Python Project Structure](https://docs.python-guide.org/writing/structure/)
