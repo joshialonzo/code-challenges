@@ -1,4 +1,4 @@
-from code_challenges.math.fahrenheit.celsius import (
+from code_challenges.math.convert.fahrenheit.celsius import (
     to_celsius as fahrenheit_to_celsius,
 )
 

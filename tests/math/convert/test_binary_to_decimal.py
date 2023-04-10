@@ -1,4 +1,4 @@
-from code_challenges.math.binary.to_decimal import (
+from code_challenges.math.convert.binary.to_decimal import (
     to_decimal as binary_to_decimal
 )
 

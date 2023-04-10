@@ -1,5 +1,5 @@
 import pytest
-from code_challenges.math.binary.zero_padding import pad
+from code_challenges.math.convert.binary.zero_padding import pad
 
 
 def test_zero_padding_1():
