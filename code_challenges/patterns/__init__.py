@@ -45,4 +45,16 @@ OPP: Object Oriented Programming
 
 * Methods:
     * Represents the behavior of an entity.
+
+* Inheritance:
+    * Establishes a relationship between classes as parent and child.
+    * Child class:  Keeps the attributes and methods of the parent class.
+                    Adds new attributes and methods of its own.
+                    Overrides the existing methods of the parent class.
+    * Parent class: The class that is inherited from.
+
+* Polymorphism:
+    * Relies on inheritance.
+    * Allows child classes to be instantiated and treated as the same class as the parent.
+    * Enable a parent class to be manifested into any of its child classes.
 """
